@@ -5,7 +5,11 @@ public class BubbleSort {
     public static void main(String[] args) {
 
         int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+        sort(intArray);
+        printArray(intArray);
+    }
 
+    public static int[] sort(int[] intArray) {
         // To sort intArray - Time Complexity: O(n*n)
         for (int lastUnsortedIndex = intArray.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
             for (int i = 0; i < lastUnsortedIndex; i++) {
@@ -15,10 +19,7 @@ public class BubbleSort {
             }
         }
 
-        // Print intArray
-        for (int i = 0; i < intArray.length; i++) {
-            System.out.print(intArray[i] + ", ");
-        }
+        return intArray;
     }
 
     public static void swap(int[] array, int i, int j) {
@@ -29,5 +30,12 @@ public class BubbleSort {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+    }
+
+    public static void printArray(int[] intArray) {
+        // Print intArray
+        for (int i = 0; i < intArray.length; i++) {
+            System.out.print(intArray[i] + ", ");
+        }
     }
 }
