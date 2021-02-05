@@ -2,17 +2,9 @@ package dsa.sort.bubblesort;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class BubbleSortTest {
-
-    static BubbleSort bubbleSort;
-
-    @BeforeAll
-    public static void init() {
-        bubbleSort = new BubbleSort();
-    }
 
     @Test
     void bubbleSortTest() {
